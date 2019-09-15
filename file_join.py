@@ -19,7 +19,7 @@ def get_files(path):
 def merge_files(txt_files):
     """Creates a new file by merging other files
 
-    It copies all the text files that were created today and appends to a new file"""
+    It copies all the text files that were created today and appends to a new file and returns new file name"""
     new_file = str(datetime.today().date()) + '_unified.txt'
     for a in txt_files:
         if txt_files[a].date() == datetime.today().date() and a != new_file:
